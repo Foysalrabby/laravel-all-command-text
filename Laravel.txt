@@ -1,0 +1,45 @@
+composer create-project --prefer-dist laravel/laravel blog "7.*" //for laravel 7/6 dile 6
+//laravel 6 command for   like khata moto 
+
+composer create-project --prefer-dist laravel/laravel blog
+
+cd example-app  //blog dukar jnno
+
+php artisan serve  //run for the project all 6.7.8 version
+
+/* need command lraravel6 ,7,8*/
+php artisan make:middleware name//To create a new middleware // blog -app http  modde middle wear
+php artisan make:controller  name  //To create a new controller// blog -app  http  modde controller
+php artisan make:model   name    //To create a new model //ata samne create hoy
+php artisan make:migration   name   //To create a new migration //blog -app database migration modde pabo
+php artisan migrate  //run for the migration
+resources-views-create kortehoy app.blade.php
+
+/*  command lraravel8*/
+php artisan make:controller  name  --resource //for resource libary
+/* need command lraravel6 kono application na kaj korle ssever project upload age use hoy*/
+
+ php artisan cache:clear  //To clear cache
+php artisan route:clear  //To clear route
+php artisan config:clear   //To clear config
+php artisan view:clear  //To clear view
+
+//laravel 8 command for   like khata moto 
+composer create-project laravel/laravel example-app
+
+cd example-app
+
+php artisan serve
+//wrote link laravel
+<link href="{{asset(' ')}}" rel="stylesheet">   //css
+<script type =" " src="{{asset(' ')}}  "></script>//thakle thaklo dibo type //js
+
+
+/*  Rest Api Or Lumen */
+composer create-project --prefer-dist laravel/lumen blog  //(boylar plate for lumen for rest api)
+php -S localhost:8000 -t public  //(to run boylar plate)
+//......lumen-generator gogle search diye githb 1 link......//
+//Installation
+composer require flipbox/lumen-generator
+$app->register(Flipbox\LumenGenerator\LumenGeneratorServiceProvider::class); //add bootstrap/app.php
+
